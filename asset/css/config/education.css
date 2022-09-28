@@ -1,0 +1,135 @@
+.mainContent > .content2 {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: stretch;
+    height: auto;
+    width: auto;
+    padding: 6px;
+}
+.imgEdu {
+    width: 90px;
+    height: auto;
+    border-radius: 15%;
+    margin: 5px;
+}
+.imgEdu:hover {
+    cursor: pointer;
+    transform: scale(1.02);
+    transition: 0.5s;
+}
+figure {
+    display: inline-flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: stretch;
+    height: auto;
+    width: auto;
+    color: black;
+    margin: 9px;
+}
+.nameSchool, .year, .address {
+    margin: 5px;
+}
+.nameSchool {
+    font-family: 'Oswald', sans-serif;
+    font-weight: bold;
+    font-family: 12px;
+}
+.year, .address {
+    font-size: 12px;
+    font-family: 'Montserrat', sans-serif;
+}
+.space {
+    margin: 5px;
+}
+.edu {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    width: 600px;
+}
+@media screen and (max-width: 768px) {
+.mainContent > .content2 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: stretch;
+    height: auto;
+    width: auto;
+}
+.edu {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    width: auto;
+}
+.imgEdu {
+    width: 75px;
+    height: auto;
+    border-radius: 15%;
+    margin: 5px;
+}
+.nameSchool, .year, .address {
+    margin: 2px;
+}
+.nameSchool {
+    font-family: 10px;
+}
+.year, .address {
+    font-size: 10px;
+}
+figure {
+    display: inline-flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: stretch;
+    height: auto;
+    width: auto;
+}
+figcaption {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    height: auto;
+    width: auto;
+
+}
+.card {
+    width: 550px;
+}
+}
+@media screen and (max-width: 600px) {
+    .imgEdu {
+        width: 75px;
+        height: auto;
+        border-radius: 15%;
+        margin: 5px;
+    }
+    .nameEdu {
+        font-family: 10px;
+    }
+    .year, .address, #duration {
+        font-size: 9px;
+    }
+    .card {
+        max-width: 500px;
+        width: auto;
+    }
+}

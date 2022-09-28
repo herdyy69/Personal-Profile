@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Montserrat&family=Oswald:wght@300&family=Roboto&display=swap"
+            rel="stylesheet"
+        />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+            integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+        <link rel="stylesheet" href="../asset/css/style.css">
+        <link rel="stylesheet" href="../asset/css/config/profiles.css">
+        <title>Document</title>
+    </head>
+    <body">
+        <div class="app">
+            <main>
+                <header>
+                    <div class="container">
+                    <div class="container-head">
+                        <nav class="homeNav" id="overlaynav">
+                            <h1 class="myName">HERDYANSAH</h1>
+                            <p class="stack">
+                                <small>FRONTEND WEB DEVELOPER</small>
+                            </p>
+                            <ul id="list">
+                                <li><a href="../index.html">Home</a></li>
+                                <li><a href="profiles.html">Profil</a></li>
+                                <li><a href="educations.html">Education</a></li>
+                                <li><a href="experiences.html">Experience</a></li>
+                                <li><a href="projects.html">Project</a></li>
+                                <li><a href="skills.html">Skill</a></li>
+                            </ul>
+                            </nav>
+                            <script>
+                                const navoverlay = document.getElementById('overlaynav')
+                                const list = document.getElementById('list')
+    
+                                navoverlay.addEventListener("mouseover", function() {
+                                    navoverlay.style.display = "flex"
+                                    list.style.display = "flex"
+                                })
+                                navoverlay.addEventListener("mouseleave", function() {
+                                    navoverlay.style.display = "flex"
+                                    list.style.display = "none"
+                                })
+                            </script>
+                    </div>
+                    <section class="mainContent">
+                        <div class="content2">
+                            <figure>
+                            <img class="imgMe" src="../asset/image/Foto.jpeg" alt="Images Me">
+                            <span class="space"></span>
+                            <figcaption>
+                                <p class="card-text text-about">
+                                    <span style="font-weight: bold; font-family: 'Roboto', sans-serif;  font-size: 1.5rem;">
+                                      I'm Herdy and <span style="color: darkolivegreen ;">Web Developer</span> <br>
+                                    </span>
+                                    Hello, my name is Herdyansah I'm from west java, Bandung. I'm a web developer, my main area of 
+                                    my expertise is Frontend development. Build beautiful and responsive website is my passion. 
+                                      I also have fullstack experience, I can build backend using NodeJS and ExpressJS.
+                                </p>
+                            </figcaption>
+                        </figure>
+                        <!-- contact -->
+                        <span class="wrap-icon">
+                            <!-- wa -->
+                            <a href="https://api.whatsapp.com/send?phone=6285155338717&text=Halo%20Herdyansah%20Saya%20Mau%20Tanya%20Tentang%20Website%20Anda" target="_blank">
+                            <i class="fab fa-whatsapp"></i></a>
+                            <a id="ig" href="https://www.instagram.com/herdyy69/" target="_blank" class="icon"><i class="fab fa-instagram"></i></a>
+                            <!-- fb -->
+                            <a href="https://www.facebook.com/herdyansah" target="_blank" class="icon"><i class="fab fa-facebook"></i></a>
+                            <a href="https://www.linkedin.com/in/herdyansah-730863250/" target="_blank" class="icon"><i class="fab fa-linkedin"></i></a>
+                          </span>
+                        </div>
+                    </section>
+                    </div>
+                </header>
+            </main>
+        </div>
+    </body>
+</html>

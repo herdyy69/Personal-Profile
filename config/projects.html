@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat&family=Oswald:wght@300&family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="../asset/css/style.css" />
+    <link rel="stylesheet" href="../asset/css/config/projects.css" />
+    <title>HERDY - Project</title>
+  </head>
+  <body>
+    <div class="app">
+      <main>
+        <header>
+          <div class="container">
+            <div class="container-head">
+              <nav class="homeNav" id="overlaynav">
+                <h1 class="myName">HERDYANSAH</h1>
+                <p class="stack">
+                  <small>FRONTEND WEB DEVELOPER</small>
+                </p>
+                <ul id="list">
+                  <li><a href="../index.html">Home</a></li>
+                  <li><a href="profiles.html">Profil</a></li>
+                  <li>
+                    <a href="educations.html">Education</a>
+                  </li>
+                  <li>
+                    <a href="experiences.html">Experience</a>
+                  </li>
+                  <li><a href="projects.html">Project</a></li>
+                  <li><a href="skills.html">Skill</a></li>
+                </ul>
+              </nav>
+              <script>
+                const navoverlay = document.getElementById('overlaynav')
+                const list = document.getElementById('list')
+
+                navoverlay.addEventListener('mouseover', function () {
+                  navoverlay.style.display = 'flex'
+                  list.style.display = 'flex'
+                })
+                navoverlay.addEventListener('mouseleave', function () {
+                  navoverlay.style.display = 'flex'
+                  list.style.display = 'none'
+                })
+              </script>
+            </div>
+            <section class="mainContent">
+              <style></style>
+              <div class="content2">
+                <figure id="overlay">
+                  <div class="Project card">
+                    <a
+                      href="https://github.com/herdyy69/PROJECT-PAYROLL"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      ><img
+                        class="imgProject"
+                        src="https://cdn-icons-png.flaticon.com/512/25/25231.png"
+                        alt="Images Me"
+                    /></a>
+                    <figcaption>
+                      <h3 class="nameProject">PAYROLL PT.PRIMA RASA ABADI</h3>
+                      <div class="cardx">
+                        <p id="desc"></p>
+                        <p id="created"></p>
+                      </div>
+                    </figcaption>
+                  </div>
+                </figure>
+                <figure id="overlay2">
+                  <div class="Project card">
+                    <a
+                      href="https://github.com/herdyy69/Tugas-211"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      ><img
+                        class="imgProject"
+                        src="https://cdn-icons-png.flaticon.com/512/25/25231.png"
+                        alt="Images Me"
+                    /></a>
+                    <figcaption>
+                      <h3 class="nameProject">PPDB SMK ASSALAAM</h3>
+                      <div class="cardx1">
+                        <p id="desc1"></p>
+                        <p id="created1"></p>
+                      </div>
+                    </figcaption>
+                  </div>
+                </figure>
+                <figure>
+                  <div class="Project card">
+                    <img
+                      class="imgProject"
+                      src="https://cdn-icons-png.flaticon.com/512/25/25231.png"
+                      alt="Images Me"
+                    />
+                    <figcaption>
+                      <h3 class="nameProject">RESERVASI HOTEL</h3>
+                    </figcaption>
+                  </div>
+                </figure>
+                <script>
+                  var cardx = document.getElementsByClassName('cardx')
+                  var desc = document.getElementById('desc')
+                  var created = document.getElementById('created')
+                  var cardx1 = document.getElementsByClassName('cardx1')
+                  var desc1 = document.getElementById('desc1')
+                  var created1 = document.getElementById('created1')
+                  var overlay = document.getElementById('overlay')
+                  var overlay2 = document.getElementById('overlay2')
+                  if (overlay) {
+                    overlay.addEventListener('mouseover', function () {
+                      overlay.style.backgroundColor = 'rgba(0, 0, 0, 0.5)'
+                      overlay.style.transition = '0.5s'
+                      overlay.style.borderRadius = '15px'
+                      overlay.style.padding = '5px'
+                      cardx[0].style.display = 'block'
+                      desc.innerHTML =
+                        'Sebuah project sekolah yang berfungsi sebagai sistem penggajihan karyawan'
+                      created.innerHTML = 'Created : 2023'
+                    })
+                    overlay.addEventListener('mouseout', function () {
+                      overlay.style.backgroundColor = 'rgba(0, 0, 0, 0)'
+                      overlay.style.transition = '0.5s'
+                      overlay.style.borderRadius = '0px'
+                      overlay.style.padding = '0px'
+                      cardx[0].style.display = 'none'
+                    })
+                  }
+                  if (overlay2) {
+                    overlay2.addEventListener('mouseover', function () {
+                      overlay2.style.backgroundColor = 'rgba(0, 0, 0, 0.5)'
+                      overlay2.style.transition = '0.5s'
+                      overlay2.style.borderRadius = '15px'
+                      overlay2.style.padding = '5px'
+                      cardx1[0].style.display = 'block'
+                      desc1.innerHTML =
+                        'Sebuah project sekolah yang berfungsi sebagai sistem pendaftaran siswa baru'
+                      created1.innerHTML = 'Created : 2022'
+                    })
+                    overlay2.addEventListener('mouseout', function () {
+                      overlay2.style.backgroundColor = 'rgba(0, 0, 0, 0)'
+                      overlay2.style.transition = '0.5s'
+                      overlay2.style.borderRadius = '0px'
+                      overlay2.style.padding = '0px'
+                      cardx1[0].style.display = 'none'
+                    })
+                  }
+                </script>
+                <figure>
+                  <div class="Project card">
+                    <img
+                      class="imgProject"
+                      src="https://cdn-icons-png.flaticon.com/512/25/25231.png"
+                      alt="Images Me"
+                    />
+                    <figcaption>
+                      <h3 class="nameProject">CHORD-KU</h3>
+                    </figcaption>
+                  </div>
+                </figure>
+                <figure>
+                  <div class="Project card">
+                    <img
+                      class="imgProject"
+                      src="https://cdn-icons-png.flaticon.com/512/25/25231.png"
+                      alt="Images Me"
+                    />
+                    <figcaption>
+                      <h3 class="nameProject">WEB OTP WALLS</h3>
+                    </figcaption>
+                  </div>
+                </figure>
+              </div>
+            </section>
+          </div>
+        </header>
+      </main>
+    </div>
+  </body>
+</html>

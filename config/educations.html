@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat&family=Oswald:wght@300&family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="../asset/css/style.css" />
+    <link rel="stylesheet" href="../asset/css/config/education.css" />
+    <title>HERDY - EDUCATION</title>
+  </head>
+  <body>
+    <div class="app">
+      <main>
+        <header>
+          <div class="container">
+            <div class="container-head">
+              <nav class="homeNav" id="overlaynav">
+                <h1 class="myName">HERDYANSAH</h1>
+                <p class="stack">
+                  <small>FRONTEND WEB DEVELOPER</small>
+                </p>
+                <ul id="list">
+                  <li><a href="../index.html">Home</a></li>
+                  <li><a href="profiles.html">Profil</a></li>
+                  <li>
+                    <a href="educations.html">Education</a>
+                  </li>
+                  <li>
+                    <a href="experiences.html">Experience</a>
+                  </li>
+                  <li><a href="projects.html">Project</a></li>
+                  <li><a href="skills.html">Skill</a></li>
+                </ul>
+              </nav>
+              <script>
+                const navoverlay = document.getElementById('overlaynav')
+                const list = document.getElementById('list')
+
+                navoverlay.addEventListener('mouseover', function () {
+                  navoverlay.style.display = 'flex'
+                  list.style.display = 'flex'
+                })
+                navoverlay.addEventListener('mouseleave', function () {
+                  navoverlay.style.display = 'flex'
+                  list.style.display = 'none'
+                })
+              </script>
+            </div>
+            <section class="mainContent">
+              <div class="content2">
+                <figure>
+                  <div class="edu card">
+                    <img
+                      class="imgEdu"
+                      src="../asset/image/sd.png"
+                      alt="Images Me"
+                    />
+                    <figcaption>
+                      <h3 class="nameSchool">SDN LEUWIDULANG</h3>
+                      <p class="year">2010 - 2016</p>
+                      <p class="address">
+                        Jl. Leuwidulang, RT.02/RW.02, Rancamulya, Kec.
+                        Pameungpeuk, Kabupaten Bandung, Jawa Barat 40376
+                      </p>
+                    </figcaption>
+                  </div>
+                </figure>
+                <figure>
+                  <div class="edu card">
+                    <img
+                      class="imgEdu"
+                      src="../asset/image/smp.png"
+                      alt="Images Me"
+                    />
+                    <figcaption>
+                      <h3 class="nameSchool">SMPN 3 BALEENDAH</h3>
+                      <p class="year">2017 - 2020</p>
+                      <p class="address">
+                        Jl. Rancakasiat, Rancamanyar, Kec. Baleendah, Kabupaten
+                        Bandung, Jawa Barat 40375
+                      </p>
+                    </figcaption>
+                  </div>
+                </figure>
+                <figure>
+                  <div class="edu card">
+                    <img
+                      class="imgEdu"
+                      src="../asset/image/smk.png"
+                      alt="Images Me"
+                    />
+                    <figcaption>
+                      <h3 class="nameSchool">SMK ASSALAAM</h3>
+                      <p class="year">2020 - Present</p>
+                      <p class="address">
+                        Jalan Situ Tarate Jl. Cibaduyut, Cangkuang Kulon, Kec.
+                        Dayeuhkolot, Kota Bandung, Jawa Barat 40265
+                      </p>
+                    </figcaption>
+                  </div>
+                </figure>
+              </div>
+            </section>
+          </div>
+        </header>
+      </main>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,194 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+    font-family: oswald;
+    font-weight: bold;
+}
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    height: 100vh;
+    width: 100vw;
+    background-color: #cad2c5;
+    color: aliceblue;
+}
+header > .container {
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    padding: 5px;
+    height: 90%;
+    width: 90%;
+    background-color: #343a40;
+    color: aliceblue;      
+    border-radius: 12px;      
+}
+nav {
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: stretch;
+    align-self: stretch;
+    width: auto;
+    height: auto;
+    flex-wrap: wrap;
+    color: aliceblue;
+    padding: 20px;
+}
+nav:hover {
+    transition:  all 10s;
+}
+ul {
+    color: aliceblue;
+    width: auto;
+    height: auto;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: none;
+}
+li {
+    padding: 10px;
+    margin: 5px;
+    margin-top: -8px;
+}
+li > a {
+    text-decoration: none;
+    color: aliceblue;
+    font-size: 20px;
+}
+a:hover {
+    transition: 0.5s;
+    border: 1px solid #ffffff;
+    border-radius: 12px;
+    padding: 5px;
+}
+
+.container-head {
+    /* display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap; */
+    width: auto;
+    height: auto;
+    color: aliceblue;
+}
+.myName {
+    font-size: 50px;
+    font-weight: bold;
+}
+nav > .stack {
+    font-size: 20px;
+    margin-top: -20px;
+}
+.myName, .stack {
+    margin: 20px;
+    padding: 0;
+}
+.mainContent {
+    display: inline-flex;
+    flex-direction: column;
+    flex-grow: 2;
+    justify-content: center;
+    align-items: center;
+    align-self: stretch;
+    flex-wrap: wrap;
+    width: auto;
+    height: auto;
+    background-color: #343a40;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
+    border-radius: 12px;
+} 
+.card {
+    width: auto;
+    height: auto;
+    padding: 8px;
+    border-radius: 29px;
+    background: #9a9996;
+    box-shadow:  5px 5px 0px #979693,
+                -5px -5px 0px #9d9c99;
+}
+
+@media screen and (max-width: 768px) {
+header > .container {
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    height: 95%;
+    width: 95%;
+}
+nav ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    width: auto;
+}
+nav ul li a {
+    padding: 0;
+}
+li{
+    margin: -3px;
+    margin-top: 0
+}
+li > a {
+    font-size: 17.5px;
+}
+.myName {
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+}
+nav > .stack {
+    display: none;
+}
+.myName, .stack {
+    padding: 0;
+}
+.mainContent {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 2;
+    justify-content: center;
+    align-items: center;
+    align-self: stretch;
+    flex-wrap: wrap;
+    width: auto;
+    height: auto;
+} 
+.card {
+    width: auto;
+    height: auto;
+    padding: 7px;
+}
+}
+
+@media screen and (max-width: 600px) {
+    li > a {
+        font-size: 15.5px;
+    }
+    .myName {
+        font-size: 25px;
+        font-weight: bold;
+        text-align: center;
+    }
+    nav > .stack {
+        display: none;
+    }
+    .card {
+        width: auto;
+        height: auto;
+        padding: 7px;
+    }
+}

@@ -1,0 +1,138 @@
+.mainContent > .content2 {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: stretch;
+    height: auto;
+    width: auto;
+    padding: 6px;
+}
+.imgExperience {
+    width: 100px;
+    height: auto;
+    border-radius: 15%;
+    margin: 5px;
+}
+.imgExperience:hover {
+    cursor: pointer;
+    transform: scale(1.02);
+    transition: 0.5s;
+}
+figure {
+    display: inline-flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: stretch;
+    height: auto;
+    width: auto;
+    color: black;
+    margin: 9px;
+}
+.nameExperience, .year, .address, .stack1, #duration {
+    margin: 5px;
+}
+.nameExperience {
+    font-family: 'Oswald', sans-serif;
+    font-weight: bold;
+    font-family: 12px;
+}
+.stack1 {
+    font-size: 10px;
+    font-family: 'Oswald', sans-serif;
+}
+.year, .address , #duration{
+    font-size: 12px;
+    font-family: 'Montserrat', sans-serif;
+}
+.space {
+    margin: 5px;
+}
+.Experience {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    width: 600px;
+}
+@media screen and (max-width: 768px) {
+.mainContent > .content2 {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    width: auto;
+}
+.Experience {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    width: auto;
+}
+.imgExperience {
+    width: 75px;
+    height: auto;
+    border-radius: 15%;
+    margin: 5px;
+}
+.nameExperience, .year, .address, .stack1, #duration {
+    margin: 2px;
+}
+.nameExperience {
+    font-family: 12px;
+}
+.year, .address, #duration {
+    font-size: 11px;
+}
+figure {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    align-content: stretch;
+    height: auto;
+    width: auto;
+}
+figcaption {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    height: auto;
+    width: auto;
+}
+.card {
+    width: 600px;
+}
+}
+
+@media screen and (max-width: 600px) {
+    .imgExperience {
+        width: 75px;
+        height: auto;
+        border-radius: 15%;
+        margin: 5px;
+    }
+    .nameExperience {
+        font-family: 10px;
+    }
+    .year, .address, #duration {
+        font-size: 9px;
+    }
+    .card {
+        max-width: 500px;
+        width: auto;
+    }
+}

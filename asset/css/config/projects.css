@@ -1,0 +1,170 @@
+.mainContent > .content2 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: stretch;
+    height: auto;
+    width: auto;
+    padding: 6px;
+}
+.imgProject {
+    width: 90px;
+    height: auto;
+    border-radius: 15%;
+    margin: 5px;
+}
+.imgProject:hover {
+    cursor: pointer;
+    transform: scale(1.02);
+    transition: 0.5s;
+}
+figure {
+    display: inline-flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: stretch;
+    height: auto;
+    width: auto;
+    color: black;
+    margin: 9px;
+    cursor: pointer;
+}
+.nameProject {
+    font-family: 'Oswald', sans-serif;
+    font-weight: bold;
+    font-family: 12px;
+}
+.space {
+    margin: 5px;
+}
+.Project {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    width: auto;
+}
+.cardx , .cardx1{
+    width: auto;
+    height: auto;
+    padding: 10px;
+    border-radius: 10px;
+    background: #9a9996;
+    border: 1px solid black;
+    color: black;
+    display: none;
+    box-shadow:  1px 1px 1px #000000,
+                -1px -1px -1px #000000;
+}
+#desc, #created, #desc1, #created1 {
+    font-family: 'Oswald', sans-serif;
+    font-weight: bold;
+    font-size: 15px;
+    margin: 5px;
+}
+#created , #created1 {
+    font-size: 10px;
+}
+@media screen and (max-width: 768px) {
+.mainContent > .content2 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    width: auto;
+}
+.Project {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    width: auto;
+}
+.imgProject {
+    width: 75px;
+    height: auto;
+    border-radius: 15%;
+    margin: 5px;
+}
+.nameProject {
+    font-size: 12px;
+}
+figure {
+    display: inline-flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: stretch;
+    height: auto;
+    width: auto;
+    margin: 10px;
+}
+figcaption {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    height: auto;
+    width: auto;
+
+}
+.cardx, .cardx1{
+    width: auto;
+    height: auto;
+}
+#desc, #created , #desc1, #created1 {
+    font-family: 'Oswald', sans-serif;
+    font-weight: bold;
+    font-size: 12.5px;
+    margin: 5px;
+}
+#created , #created1 {
+    font-size: 10px;
+}
+}
+
+@media screen and (max-width: 600px) {
+    .mainContent > .content2 {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        height: auto;
+        width: auto;
+    }
+    .Project {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: flex-start;
+        align-items: center;
+        height: auto;
+        width: auto;
+    }
+    .imgProject {
+        width: 60px;
+        height: auto;
+        border-radius: 15%;
+        margin: 5px;
+    }
+    .nameProject {
+        font-size: 10px;
+    }
+    .card {
+        max-width: 500px;
+        width: 250px;
+    }
+}

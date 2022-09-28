@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat&family=Oswald:wght@300&family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="../asset/css/style.css" />
+    <link rel="stylesheet" href="../asset/css/config/skills.css" />
+    <title>HERDY - Skill</title>
+  </head>
+  <body>
+    <div class="app">
+      <main>
+        <header>
+          <div class="container">
+            <div class="container-head">
+              <nav class="homeNav" id="overlaynav">
+                <h1 class="myName">HERDYANSAH</h1>
+                <p class="stack">
+                  <small>FRONTEND WEB DEVELOPER</small>
+                </p>
+                <ul id="list">
+                  <li><a href="../index.html">Home</a></li>
+                  <li><a href="profiles.html">Profil</a></li>
+                  <li><a href="educations.html">Education</a></li>
+                  <li><a href="experiences.html">Experience</a></li>
+                  <li><a href="projects.html">Project</a></li>
+                  <li><a href="skills.html">Skill</a></li>
+                </ul>
+              </nav>
+              <script>
+                const navoverlay = document.getElementById('overlaynav')
+                const list = document.getElementById('list')
+
+                navoverlay.addEventListener('mouseover', function () {
+                  navoverlay.style.display = 'flex'
+                  list.style.display = 'flex'
+                })
+                navoverlay.addEventListener('mouseleave', function () {
+                  navoverlay.style.display = 'flex'
+                  list.style.display = 'none'
+                })
+              </script>
+            </div>
+            <section class="mainContent">
+              <div class="incontent">
+                <figure>
+                  <div class="Skill card">
+                    <img
+                      class="imgSkill"
+                      src="https://cdn-icons-png.flaticon.com/512/732/732212.png"
+                      alt="Images Me"
+                    />
+                    <figcaption>
+                      <div class="progress">
+                        <progress id="" value="90" max="100"></progress>
+                        <span id="progper">90%</span>
+                      </div>
+                    </figcaption>
+                  </div>
+                </figure>
+                <figure>
+                  <div class="Skill card">
+                    <img
+                      class="imgSkill"
+                      src="https://www.freepnglogos.com/uploads/html5-logo-png/html5-logo-css-logo-png-transparent-svg-vector-bie-supply-9.png"
+                      alt="Images Me"
+                    />
+                    <figcaption>
+                      <div class="progress">
+                        <progress id="" value="85" max="100"></progress>
+                        <span id="progper">85%</span>
+                      </div>
+                    </figcaption>
+                  </div>
+                </figure>
+                <figure>
+                  <div class="Skill card">
+                    <img
+                      class="imgSkill"
+                      src="https://gelar.dev/_next/image?url=%2Ficons%2Fjavascript.webp&w=64&q=75"
+                      alt="Images Me"
+                    />
+                    <figcaption>
+                      <div class="progress">
+                        <progress id="" value="60" max="100"></progress>
+                        <span id="progper">60%</span>
+                      </div>
+                    </figcaption>
+                  </div>
+                </figure>
+                <figure>
+                  <div class="Skill card">
+                    <img
+                      class="imgSkill"
+                      src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Laravel.svg/985px-Laravel.svg.png"
+                      alt="Images Me"
+                    />
+                    <figcaption>
+                      <div class="progress">
+                        <progress id="" value="60" max="100"></progress>
+                        <span id="progper">60%</span>
+                      </div>
+                    </figcaption>
+                  </div>
+                </figure>
+                <figure>
+                  <div class="Skill card">
+                    <img
+                      class="imgSkill"
+                      src="https://cdn4.iconfinder.com/data/icons/logos-3/600/React.js_logo-512.png"
+                      alt="Images Me"
+                    />
+                    <figcaption>
+                      <div class="progress">
+                        <progress id="" value="50" max="100"></progress>
+                        <span id="progper">50%</span>
+                      </div>
+                    </figcaption>
+                  </div>
+                </figure>
+                <figure>
+                  <div class="Skill card">
+                    <img
+                      class="imgSkill"
+                      src="https://gelar.dev/icons/nodejs.svg"
+                      alt="Images Me"
+                    />
+                    <figcaption>
+                      <div class="progress">
+                        <progress id="" value="50" max="100"></progress>
+                        <span id="progper">50%</span>
+                      </div>
+                    </figcaption>
+                  </div>
+                </figure>
+              </div>
+            </section>
+          </div>
+        </header>
+      </main>
+    </div>
+  </body>
+</html>

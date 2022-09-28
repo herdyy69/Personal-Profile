@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Oswald:wght@300&family=Roboto&display=swap" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="asset/css/style.css" />
+    <title>Home</title>
+  </head>
+  <body onload="startTime()">
+    <div class="app">
+      <main>
+        <header>
+          <div class="container">
+            <div class="container-head">
+              <nav class="homeNav" id="overlaynav">
+                <h1 class="myName">HERDYANSAH</h1>
+                <p class="stack">
+                  <small>FRONTEND WEB DEVELOPER</small>
+                </p>
+                <ul id="list">
+                  <li><a href="index.html">Home</a></li>
+                  <li><a href="config/profiles.html">Profil</a></li>
+                  <li><a href="config/educations.html">Education</a></li>
+                  <li><a href="config/experiences.html">Experience</a></li>
+                  <li><a href="config/projects.html">Project</a></li>
+                  <li><a href="config/skills.html">Skill</a></li>
+                </ul>
+              </nav>
+              <script>
+                const navoverlay = document.getElementById("overlaynav");
+                const list = document.getElementById("list");
+
+                navoverlay.addEventListener("mouseover", function () {
+                  navoverlay.style.display = "flex";
+                  list.style.display = "flex";
+                  navoverlay.style.transition = "all 1s ease-out";
+                  navoverlay.style.transition = "all 5s";
+                });
+                navoverlay.addEventListener("mouseleave", function () {
+                  navoverlay.style.display = "flex";
+                  list.style.display = "none";
+                });
+              </script>
+            </div>
+            <section class="mainContent">
+              <div class="content2">
+                <h1 class="welcome-text">WELCOME TO MY WEBSITE</h1>
+                <p id="txt"></p>
+                <script>
+                  function startTime() {
+                    const today = new Date();
+                    let h = today.getHours();
+                    let m = today.getMinutes();
+                    let s = today.getSeconds();
+                    m = checkTime(m);
+                    s = checkTime(s);
+                    document.getElementById("txt").innerHTML = h + ":" + m + ":" + s + " WIB";
+                    setTimeout(startTime, 1000);
+                  }
+
+                  function checkTime(i) {
+                    if (i < 10) {
+                      i = "0" + i;
+                    } // add zero in front of numbers < 10
+                    return i;
+                  }
+                </script>
+              </div>
+            </section>
+          </div>
+        </header>
+      </main>
+    </div>
+  </body>
+</html>

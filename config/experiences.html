@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat&family=Oswald:wght@300&family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="../asset/css/style.css" />
+    <link rel="stylesheet" href="../asset/css/config/experiences.css" />
+    <title>HERDY - EXPERIENCE</title>
+  </head>
+  <body>
+    <div class="app">
+      <main>
+        <header>
+          <div class="container">
+            <div class="container-head">
+              <nav class="homeNav" id="overlaynav">
+                <h1 class="myName">HERDYANSAH</h1>
+                <p class="stack">
+                  <small>FRONTEND WEB DEVELOPER</small>
+                </p>
+                <ul id="list">
+                  <li><a href="../index.html">Home</a></li>
+                  <li><a href="profiles.html">Profil</a></li>
+                  <li><a href="educations.html">Education</a></li>
+                  <li><a href="experiences.html">Experience</a></li>
+                  <li><a href="projects.html">Project</a></li>
+                  <li><a href="skills.html">Skill</a></li>
+                </ul>
+              </nav>
+              <script>
+                const navoverlay = document.getElementById('overlaynav')
+                const list = document.getElementById('list')
+
+                navoverlay.addEventListener('mouseover', function () {
+                  navoverlay.style.display = 'flex'
+                  list.style.display = 'flex'
+                })
+                navoverlay.addEventListener('mouseleave', function () {
+                  navoverlay.style.display = 'flex'
+                  list.style.display = 'none'
+                })
+              </script>
+            </div>
+            <section class="mainContent">
+              <div class="content2">
+                <figure>
+                  <div class="Experience card">
+                    <img
+                      class="imgExperience"
+                      src="https://media-exp1.licdn.com/dms/image/C560BAQHQtZ2pWgQNlA/company-logo_200_200/0/1637579491781?e=1671667200&v=beta&t=TxvXG349kcWhp-vfg1APkWK9LRVuXc6EDu7SKCcbD0o"
+                      alt="Images Me"
+                    />
+                    <figcaption>
+                      <h3 class="nameExperience">INTERNSHIP PLABS.ID</h3>
+                      <p class="stack1">FRONTEND WEB DEVELOPER</p>
+                      <p class="year">
+                        <span id="start_date">7 September 2022</span>
+                        -
+                        <span id="end_date">Present</span>
+                      </p>
+                      <p id="duration">TEST</p>
+                      <p class="address">
+                        Jl. Sukasenang V No.14, Cikutra, Kec. Cibeunying Kidul,
+                        Kota Bandung, Jawa Barat 40124
+                      </p>
+                    </figcaption>
+                  </div>
+                </figure>
+                <script>
+                  const start_date =
+                    document.getElementById('start_date').innerHTML
+                  const end_date = document.getElementById('end_date').innerHTML
+                  const duration = document.getElementById('duration')
+                  const date1 = new Date(start_date)
+                  const date2 = new Date()
+                  const diffTime = Math.abs(date2 - date1)
+                  const diffDays = Math.ceil(diffTime / (1000 * 60 * 60 * 24))
+                  const years = Math.floor(diffDays / 365)
+                  const months = Math.floor((diffDays % 365) / 30)
+                  // duration.innerHTML = `${years} years ${months} months ${diffDays} Days`;
+                  if (diffDays < 30) {
+                    duration.innerHTML = `${diffDays} Days`
+                  } else if (diffDays < 365) {
+                    duration.innerHTML = `${months} months ${diffDays} Days`
+                  } else {
+                    duration.innerHTML = `${years} years ${months} months ${diffDays} Days`
+                  }
+                </script>
+                <figure>
+                  <div class="Experience card">
+                    <img
+                      class="imgExperience"
+                      src="https://www.freepnglogos.com/uploads/kawasaki-png-logo/kawasaki-green-emblem-png-logo-1.png"
+                      alt="Images Me"
+                    />
+                    <figcaption>
+                      <h3 class="nameExperience">KAWASAKI SAFETY RIDING</h3>
+                      <p class="stack1">PARTICIPANT</p>
+                      <p class="address">
+                        Jl. Situ Tarate Jl. Cibaduyut, Cangkuang Kulon, Kec.
+                        Dayeuhkolot, Kota Bandung, Jawa Barat 40265
+                      </p>
+                    </figcaption>
+                  </div>
+                </figure>
+                <figure>
+                  <div class="Experience card">
+                    <figcaption>
+                      <h3 class="nameExperience">.....</h3>
+                    </figcaption>
+                  </div>
+                </figure>
+              </div>
+            </section>
+          </div>
+        </header>
+      </main>
+    </div>
+  </body>
+</html>
